@@ -26,7 +26,6 @@ export const registerUser = createAsyncThunk(
 export const loginUser = createAsyncThunk(
   "/auth/login",
   async (formData) => {
-    alert("base url", BASE_URL);
     const response = await axios.post(
       `${BASE_URL}/api/auth/login`,
       formData,
